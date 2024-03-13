@@ -1,7 +1,7 @@
 name: Python
 on:
   schedule:
-  - cron: "*/59 * * * *"
+  - cron: "*/3 * * * *"
     
 jobs:
     build:
@@ -20,8 +20,8 @@ jobs:
               
         - name: commit files
           run: |
-                git config --local user.email "elv.s.earl@gmail.com"
-                git config --local user.name "the-1Riddle"
+                git config --local user.email "hezethegamer01@gmail.com"
+                git config --local user.name "Hezethegamer"
                 git add -A
                 git commit -m "update data" -a
         
